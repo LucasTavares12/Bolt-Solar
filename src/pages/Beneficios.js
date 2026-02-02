@@ -115,7 +115,7 @@ function Beneficios() {
           className="cta-beneficios"
         >
           <FaWhatsapp className="whatsapp-icon" />
-          Escolha Certo e Solicite seu Orçamento Agora
+          Faça a Escolha certa
         </a>
       </div>
     </section>
