@@ -1,0 +1,144 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+
+  /* ESSENCIAL */
+  margin-top: -120px;
+  padding-top: 120px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* OVERLAY ESCURO DA IMAGEM */
+.home .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* CONTEÚDO */
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: white;
+}
+
+.home-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.6;
+
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* CTA FINAL */
+.home-cta {
+  margin-top: 30px;
+  display: flex;
+  
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.cta-home {
+  background-color: #f4a300;
+  color: white;
+
+  padding: 16px 36px;
+  border-radius: 1px;  
+
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.cta-home:hover {
+  background-color: #d37800;
+  transform: translateY(-4px);
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   RESPONSIVO — MOBILE FIRST
+================================ */
+@media (max-width: 768px) {
+  .home {
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  .home-content h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .home-cta {
+    justify-content: center;
+  }
+
+  .cta-home {
+    width: 100%;
+    justify-content: center;
+    padding: 18px;
+    font-size: 17px;
+  }
+}
+
+/* ===============================
+   MOBILE PEQUENO (CELULARES MENORES)
+================================ */
+@media (max-width: 480px) {
+  .home-content h2 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+  }
+}

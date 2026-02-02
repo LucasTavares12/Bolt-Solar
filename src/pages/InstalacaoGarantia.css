@@ -1,0 +1,246 @@
+.instalacao-garantia {
+  padding: 110px 60px;
+  background-color: #224a7a;
+  color: white;
+}
+
+.ig-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* CONTEÚDO */
+.ig-content {
+  max-width: 600px;
+}
+
+.ig-content h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.ig-subtitle {
+  font-size: 18px;
+  color: #e0e6f0;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* BLOCOS */
+.ig-block {
+  margin-bottom: 34px;
+}
+
+/* TÍTULO COM ÍCONE */
+.ig-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;
+  color:#f4a300;
+  margin-bottom: 12px;
+}
+
+.ig-icon {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+/* TEXTOS */
+.ig-block p {
+  font-size: 16px;
+  color: #e6ecf5;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* LISTA DE GARANTIAS */
+.ig-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 14px;
+}
+
+.ig-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  font-size: 16px;
+  color: #e6ecf5;
+  margin-bottom: 10px;
+}
+
+.ig-list-icon {
+  font-size: 18px;
+  margin-top: 4px;
+  color: #ffffff;
+}
+
+.ig-list strong {
+  color: #ffffff;
+}   
+
+/* IMAGEM */
+.ig-image img {
+  width: 135%;
+  max-width: 2200px;
+  margin-left: -60px;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.35));
+}
+
+/* CTA FINAL */
+.ig-cta {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-ig {
+  background-color: #f4a300;
+  color: white;
+
+  padding: 16px 36px;
+  border-radius: 1px;  
+
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.cta-ig:hover {
+  background-color: #d37800;
+  transform: translateY(-4px);
+}
+
+.whatsapp-icon {
+  font-size: 22px;
+}
+
+/* ESTADO INICIAL */
+.ig-content {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease-out;
+}
+
+.ig-image {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease-out;
+}
+
+/* ESTADO ATIVO */
+.ig-container.show .ig-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.ig-container.show .ig-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* DELAY SUAVE */
+.ig-container.show .ig-content {
+  transition-delay: 0.15s;
+}
+
+.ig-container.show .ig-image {
+  transition-delay: 0.3s;
+}
+
+
+/* ======================================================
+   RESPONSIVO — FOCO MOBILE (INSTALAÇÃO & GARANTIA)
+====================================================== */
+@media (max-width: 768px) {
+  .instalacao-garantia {
+    padding: 90px 20px;
+  }
+
+  .ig-container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  /* CONTEÚDO */
+  .ig-content {
+    max-width: 100%;
+  }
+
+  .ig-content h2 {
+    font-size: 28px;
+  }
+
+  .ig-subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  /* TÍTULOS */
+  .ig-title {
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .ig-icon {
+    font-size: 24px;
+  }
+
+  /* TEXTOS */
+  .ig-block p {
+    font-size: 15px;
+  }
+
+  /* LISTA */
+  .ig-list li {
+    justify-content: center;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  /* IMAGEM */
+  .ig-image img {
+    width: 100%;
+    max-width: 380px;
+    margin-left: 0;
+  }
+
+  /* CTA */
+  .cta-ig {
+    width: 100%;
+    justify-content: center;
+    font-size: 17px;
+    padding: 18px;
+  }
+
+  /* ===== ANIMAÇÕES MOBILE ===== */
+  .ig-content {
+    transform: translateY(40px);
+  }
+
+  .ig-image {
+    transform: translateY(-40px);
+  }
+
+  .ig-container.show .ig-content,
+  .ig-container.show .ig-image {
+    transform: translateY(0);
+  }
+}
+

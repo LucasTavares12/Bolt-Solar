@@ -1,0 +1,174 @@
+.pagamento {
+  padding: 120px 60px;
+  background-color: #224a7a;
+  color: white;
+  text-align: center;
+}
+
+.pg-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pg-container h2 {
+  font-size: 38px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.pg-subtitle {
+  font-size: 18px;
+  color: #e0e6f0;
+  max-width: 720px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+/* GRID */
+.pg-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.pg-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 34px 30px;
+  border-radius: 1px;
+  backdrop-filter: blur(6px);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pg-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px #f4a300;
+}
+
+/* TÍTULO COM ÍCONE */
+.pg-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 21px;
+  font-weight: 600;
+  color:#f4a300;
+  margin-bottom: 14px;
+}
+
+
+/* ÍCONE */
+.pg-icon {
+  color: #ffffff; /* ícone branco */
+  font-size: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* TEXTO */
+.pg-card p {
+  font-size: 16px;
+  color: #f1f5fb;
+  line-height: 1.6;
+}
+
+.pg-card strong {
+  color: #ffffff;
+}
+
+/* CTA */
+.pg-cta {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-pg {
+  background-color: #f4a300;
+  color: white;
+
+  padding: 16px 38px;
+  border-radius: 1px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.cta-pg:hover {
+  background-color: #d37800;
+  transform: translateY(-4px);
+}
+
+.whatsapp-icon {
+  font-size: 22px;
+}
+
+/* ======================================================
+   MOBILE FIRST — FOCO TOTAL EM CELULAR
+====================================================== */
+@media (max-width: 768px) {
+  .pagamento {
+    padding: 90px 20px;
+  }
+
+  .pg-container h2 {
+    font-size: 28px;
+  }
+
+  .pg-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  /* GRID */
+  .pg-cards {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  /* CARD */
+  .pg-card {
+    padding: 26px 22px;
+  }
+
+  /* TÍTULO */
+  .pg-title {
+    font-size: 19px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pg-icon {
+    font-size: 24px;
+  }
+
+  /* TEXTO */
+  .pg-card p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* CTA */
+  .cta-pg {
+    width: 100%;
+    justify-content: center;
+    font-size: 17px;
+    padding: 18px;
+  }
+}
+
+

@@ -1,0 +1,223 @@
+.suporte-prazo {
+  padding: 110px 60px;
+  background-color: #ffffff;
+}
+
+.sp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* IMAGEM */
+.sp-image img {
+  width: 137%;
+  max-width: 2400px;
+  margin-left: -153px;
+}
+
+/* CONTEÚDO */
+.sp-content {
+  max-width: 600px;
+}
+
+.sp-content h2 {
+  font-size: 36px;
+  color: #004aad;
+  margin-bottom: 16px;
+}
+
+.sp-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* CARD */
+.sp-card {
+  background-color: #f8f9fb;
+  padding: 24px 28px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* TÍTULO COM ÍCONE */
+.sp-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;
+  color: #224a7a;
+  margin-bottom: 12px;
+}
+
+/* ÍCONE LARANJA */
+.sp-icon {
+  font-size: 24px;
+  color: #f4a300;
+  flex-shrink: 0;
+}
+
+/* TEXTO */
+.sp-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.sp-card strong {
+  color: #004aad;
+}
+
+/* CTA FINAL */
+.sp-cta {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-sp {
+  background-color: #f4a300;
+  color: white;
+
+  padding: 16px 36px;
+  border-radius: 1px;  
+
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.cta-sp:hover {
+  background-color: #d37800;
+  transform: translateY(-4px);
+}
+
+.whatsapp-icon {
+  font-size: 22px;
+}
+
+/* ===== ANIMAÇÕES SUPORTE / PRAZO ===== */
+
+/* ESTADO INICIAL */
+.sp-image {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease-out;
+}
+
+.sp-content {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease-out;
+}
+
+/* ESTADO ATIVO */
+.sp-container.show .sp-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sp-container.show .sp-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* DELAYS SUAVES */
+.sp-container.show .sp-image {
+  transition-delay: 0.15s;
+}
+
+.sp-container.show .sp-content {
+  transition-delay: 0.3s;
+}
+
+
+/* ===== MOBILE FIRST (CELULAR) ===== */
+@media (max-width: 768px) {
+  .suporte-prazo {
+    padding: 80px 20px;
+  }
+
+  .sp-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* IMAGEM */
+  .sp-image img {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* CONTEÚDO */
+  .sp-content {
+    max-width: 100%;
+  }
+
+  .sp-content h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sp-subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  /* CARD */
+  .sp-card {
+    padding: 20px;
+  }
+
+  .sp-title {
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sp-icon {
+    font-size: 22px;
+  }
+
+  .sp-card p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* CTA */
+  .cta-sp {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 18px;
+    font-size: 17px;
+  }
+
+  /* ===== ANIMAÇÃO MOBILE ===== */
+  .sp-image,
+  .sp-content {
+    transform: translateY(60px);
+  }
+
+  .sp-container.show .sp-image,
+  .sp-container.show .sp-content {
+    transform: translateY(0);
+  }
+}
