@@ -27,6 +27,12 @@ function Navbar()
       <h1 className="logo">Bolt Solar</h1>
     </div>
     <div className="nav-right">
+
+    {/* BOTÃO 3 PONTINHOS (APENAS MOBILE VIA CSS) */}
+      <div className="menu-toggle" id="menuToggle">
+        ⋮
+      </div>
+
       <ul className="nav-links">
         <li><a href="#home">Início</a></li>
         <li><a href="#beneficios">Vantagens</a></li>

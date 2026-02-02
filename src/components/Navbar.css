@@ -101,6 +101,10 @@ html {
   margin-right: 100px;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .navbar {
     padding: 10px 24px;
@@ -122,34 +126,72 @@ html {
 /* ======================================================
    MOBILE (FOCO PRINCIPAL)
 ====================================================== */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .navbar {
-    padding: 8px 18px;
+    padding: 8px 14px;
   }
 
-  /* LOGO MENOR */
+  /* LOGO COLADA À ESQUERDA */
   .logo-img {
-    height: 60px;
+    height: 58px;
+    margin-left: 0;
   }
 
-  /* ORGANIZA LADO DIREITO */
-  .nav-right {
-    align-items: flex-end;
-    gap: 6px;
+  .logo {
+    margin-left: 0;
   }
 
-  /* LINKS MAIS COMPACTOS */
+  /* REMOVE LINKS DA NAVBAR */
   .nav-links {
-    gap: 14px;
+    position: absolute;
+    top: 100%;
+    right: 14px;
+
+    background: rgba(34, 74, 122, 0.95);
+    backdrop-filter: blur(8px);
+
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 20px;
+    border-radius: 6px;
+
+    display: none;
+    width: 200px;
   }
 
+  /* LINKS */
   .nav-links a {
-    font-size: 14px;
+    font-size: 15px;
+    text-align: right;
   }
 
-  /* CTA MOBILE */
+  /* MENU ATIVO */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* BOTÃO DOS 3 PONTOS */
+  .menu-toggle {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+
+  /* CTA AJUSTADO */
   .cta-button {
     font-size: 13px;
     padding: 6px 14px;
+    margin-right: 0;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    margin-right: 0;
   }
 }
+
+

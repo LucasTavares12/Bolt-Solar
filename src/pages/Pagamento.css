@@ -126,12 +126,13 @@
   }
 
   .pg-container h2 {
-    font-size: 28px;
+    font-size: 23px;
   }
 
   .pg-subtitle {
     font-size: 16px;
     margin-bottom: 40px;
+    text-align: justify;
   }
 
   /* GRID */
@@ -159,15 +160,15 @@
   /* TEXTO */
   .pg-card p {
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
   }
 
   /* CTA */
   .cta-pg {
     width: 100%;
     justify-content: center;
-    font-size: 17px;
-    padding: 18px;
+    font-size: 15px;
+    padding: 14px 18px;
   }
 }
 

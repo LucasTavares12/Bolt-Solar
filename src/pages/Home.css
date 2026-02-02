@@ -110,12 +110,14 @@
   }
 
   .home-content h2 {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.2;
   }
 
   .home-content p {
     font-size: 16px;
+    text-align: justify;
+    line-height: 1.7;
   }
 
   .home-cta {
@@ -125,8 +127,9 @@
   .cta-home {
     width: 100%;
     justify-content: center;
-    padding: 18px;
-    font-size: 17px;
+    padding: 14px 18px;
+    font-size: 16px;
+    margin-top: 16px;
   }
 }
 
@@ -139,6 +142,12 @@
   }
 
   .home-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .cta-home {
+    padding: 12px 16px;
     font-size: 15px;
   }
 }

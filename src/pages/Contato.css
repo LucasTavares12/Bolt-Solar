@@ -111,7 +111,7 @@
 /* ===============================
    RESPONSIVO – MOBILE (FOCO PRINCIPAL)
 ================================ */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contato {
     padding: 60px 20px 25px;
   }
@@ -123,6 +123,7 @@
 
   .contato-left p {
     font-size: 14px;
+    text-align: justify;
   }
 
   .contato-right p {
