@@ -128,7 +128,7 @@ html {
 ====================================================== */
 @media (max-width: 768px) {
   .navbar {
-    padding: 8px 14px;
+    padding: 6px 14px;
   }
 
   /* LOGO COLADA À ESQUERDA */
@@ -182,8 +182,9 @@ html {
   /* CTA AJUSTADO */
   .cta-button {
     font-size: 13px;
-    padding: 6px 14px;
-    margin-left: 190px;
+    padding: 6px 17px;
+    margin-left: 65px;
+   
   }
 
   .nav-right {
