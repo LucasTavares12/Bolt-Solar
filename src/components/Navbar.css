@@ -138,7 +138,8 @@ html {
   }
 
   .logo {
-    margin-left: 20px;
+    margin-left: 15px;
+    font-size: 13px;
   }
 
   /* REMOVE LINKS DA NAVBAR */
@@ -183,7 +184,8 @@ html {
   .cta-button {
     font-size: 13px;
     padding: 6px 17px;
-    margin-left: 65px;
+    margin-left: 75px;
+    
    
   }
 
