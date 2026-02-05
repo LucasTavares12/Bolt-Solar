@@ -109,7 +109,7 @@ function Beneficios() {
       {/* CTA */}
       <div className="beneficios-cta">
         <a
-          href="https://wa.me/5598991101999"
+          href="https://wa.me/5598991101999?text=Olá! Desejo solicitar um orçamento de energia solar."
           target="_blank"
           rel="noreferrer"
           className="cta-beneficios"

@@ -45,7 +45,8 @@ function Navbar()
             <li><a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a></li>
           </ul>
         <a
-          href="https://wa.me/5598991101999"
+          href="https://wa.me/5598991101999?text=Olá! Desejo solicitar um orçamento de energia solar.
+"
           target="_blank"
           rel="noreferrer"
           className="cta-button"
