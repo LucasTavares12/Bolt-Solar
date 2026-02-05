@@ -11,7 +11,7 @@ function Home() {
       <div className="overlay"></div>
 
       <div className="home-content">
-        <h2>Sua conta de energia está alta?</h2>
+        <h2>Sua conta de energia <br/> está alta?</h2>
 
         <p>
            <strong>A Bolt Solar atua desde <strong>2021</strong> oferecendo soluções completas em

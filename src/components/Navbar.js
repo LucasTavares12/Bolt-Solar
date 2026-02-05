@@ -38,7 +38,7 @@ function Navbar()
     <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
     <div>
       <img src={logo} alt="Bolt Solar" className="logo-img" /> 
-      <h1 className="logo">Bolt Solar</h1>
+      
     </div>
     <div className="nav-right" ref={menuRef}>
 

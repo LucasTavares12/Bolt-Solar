@@ -39,15 +39,6 @@ html {
 }
 
 
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #caa96d;
-  margin-left: 100px;
-  
-  
-}
 .logo-img {
   height: 100px;
   width: auto;
@@ -84,7 +75,7 @@ html {
   font-size: 14px;
   text-decoration: none;
   font-weight: 600;
-   margin-right: 85px;
+   margin-right: 75px;
 }
 
 .cta-button:hover {
@@ -184,7 +175,8 @@ html {
   .cta-button {
     font-size: 13px;
     padding: 6px 17px;
-    margin-left: 75px;
+    margin-left: 85px;
+    text-align: center;
     
    
   }
