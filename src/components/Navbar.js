@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./Navbar.css";
 import logo from "../imagens/logoMarca.png";
 import { FaBars } from "react-icons/fa";
@@ -7,6 +7,7 @@ function Navbar()
 {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,17 @@ function Navbar()
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
+  useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => document.removeEventListener("mousedown", handleClickOutside);
+}, []);
 
 
   return (
@@ -28,7 +40,7 @@ function Navbar()
       <img src={logo} alt="Bolt Solar" className="logo-img" /> 
       <h1 className="logo">Bolt Solar</h1>
     </div>
-    <div className="nav-right">
+    <div className="nav-right" ref={menuRef}>
 
     {/* BOTÃO 3 PONTINHOS (APENAS MOBILE VIA CSS) */}
         <div

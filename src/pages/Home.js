@@ -14,10 +14,12 @@ function Home() {
         <h2>Sua conta de energia está alta?</h2>
 
         <p>
-           <strong>A Bolt Solar é especializada em soluções completas em
-          energia solar fotovoltaica, oferecendo projetos eficientes, instalação
-          profissional e suporte técnico. Reduza em até <strong>95%</strong> sua
-          conta de energia com uma fonte limpa, sustentável e segura.</strong>
+           <strong>A Bolt Solar atua desde <strong>2021</strong> oferecendo soluções completas em
+energia solar fotovoltaica, com projetos eficientes, instalação profissional
+e suporte técnico especializado. Reduza em até <strong>95%</strong> sua conta
+de energia com uma fonte limpa, sustentável, segura e comprovada ao longo dos
+anos.
+</strong>
         </p>
 
               <div className="home-cta">
