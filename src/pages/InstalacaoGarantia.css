@@ -237,6 +237,7 @@
 
   .ig-image {
     transform: translateY(-40px);
+    order: -1;
   }
 
   .ig-container.show .ig-content,
