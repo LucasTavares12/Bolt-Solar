@@ -116,14 +116,14 @@
 /* ESTADO INICIAL */
 .sp-image {
   opacity: 0;
-  transform: translateX(-80px);
-  transition: all 0.8s ease-out;
+  transform: translateX(-20px);
+  transition: all 0.5s ease-out;
 }
 
 .sp-content {
   opacity: 0;
-  transform: translateX(80px);
-  transition: all 0.8s ease-out;
+  transform: translateX(10px);
+  transition: all 0.5s ease-out;
 }
 
 /* ESTADO ATIVO */
@@ -139,11 +139,11 @@
 
 /* DELAYS SUAVES */
 .sp-container.show .sp-image {
-  transition-delay: 0.15s;
+  transition-delay: 0.1s;
 }
 
 .sp-container.show .sp-content {
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 
 
